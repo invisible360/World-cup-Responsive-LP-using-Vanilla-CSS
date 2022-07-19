@@ -159,3 +159,65 @@ article{
     font-size: 30px;
 
 }
+
+/*---------------
+ Media Queries
+ ---------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width: 576px) {
+        .top-banner {
+            margin: 30px 30px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .game-info {
+            margin: 0 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .game-info h1,p{
+            text-align: center;
+        }
+        .game-info p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .player-image {
+            margin-left: 60px;
+            margin-right: 0;
+        }
+
+        main {
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .side-nav {
+            width: 100%;
+            margin-top: -50px;
+            background-color: white;
+        }
+        .side-nav a{
+            border: 1px solid rgba(96, 95, 95, 0.507);
+        }
+        article {
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        footer a {
+            padding: 15px;
+        }
+        .quick-nav-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    
+}
