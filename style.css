@@ -58,6 +58,8 @@ body{
 .player-image img {
     width: 381px;
     height: 413px;
+    position: relative;
+    top: 6px;
 }
 
 /*-------------------
