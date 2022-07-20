@@ -10,13 +10,13 @@ body{
  Animation
  ----------------*/
  
-@keyframes sliding {
+@keyframes blinking {
             
     0% {
-        background-color: red;
+        background-color: green;
     }
     50% {
-        background-color: green;
+        background-color: red;
     }
 
     100% {
@@ -25,7 +25,7 @@ body{
     
 }
 .game-info a>.watch-live-button {
-    animation: sliding 2s linear infinite alternate;
+    animation: blinking 2s linear infinite alternate;
     animation-play-state: running;
 }
 
@@ -94,7 +94,6 @@ body{
     justify-content: center;
     column-gap: 20px;
     margin: 0 200px 100px;
-    /* width: 100%; */
 }
 
 /*------------------
@@ -155,6 +154,7 @@ article{
     margin-right: 35px;
 }
 
+
 /*-------------------
 upcoming match style
 ---------------------*/
@@ -165,7 +165,6 @@ upcoming match style
 .flags {
     border: 1px solid #E8E8E8;
     border-radius: 10px;
-    /* padding: 0 25px; */
     width: 204px;
 }
 .vs-thumbs {
