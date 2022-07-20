@@ -131,6 +131,16 @@ article{
     margin-right: 35px;
 }
 
+.view-all-button {
+    display: none;
+    background-color: #DD0000;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 
 /*--------------
  footer style
@@ -219,5 +229,40 @@ article{
 
 /* Tablet */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-    
+    .top-banner {
+        margin: 35px 35px 100px;
+    }
+    main {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        margin: 0 35px 100px
+    }
+    .side-nav {
+        /* 910px */
+        width: 100%;
+        display: flex;
+        margin-top: -50px;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .side-nav a {
+        padding: 10px 80px;
+        border: 1px solid rgba(96, 95, 95, 0.507);
+    }
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #tab-display-none {
+        display: none;
+    }
+    .view-all-button {
+        display: block;
+        margin: 30px 40% 0;
+    }
+
+    .quick-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
