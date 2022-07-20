@@ -200,7 +200,7 @@ article{
 /* Mobile Devices */
 @media only screen and (max-width: 576px) {
         .top-banner {
-            margin: 30px 30px 100px;
+            margin: 30px 20px 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -214,21 +214,29 @@ article{
         }
         .game-info h1,p{
             text-align: center;
+            font-size: 32px;
         }
         .game-info p{
             overflow: hidden;
             text-overflow: ellipsis;
+            font-size: 10px;
+        }
+        .watch-live-button {
+            justify-content: space-between;
+            width: 80px;
         }
         .player-image {
             margin-left: 60px;
             margin-right: 0;
+        }
+        .player-image img {
+            height: 300px;
         }
         aside {
             width: 100%;
         }
         main {
             grid-template-columns: repeat(1,1fr);
-            /* align-items: center; */
             justify-content: center;
             row-gap: 20px;
             margin: 0 5% 100px;
@@ -246,6 +254,9 @@ article{
         }
         article {
             grid-template-columns: repeat(1,1fr);
+        }
+        .transfer {
+            font-size: 20px;
         }
 
         footer a {
@@ -297,9 +308,12 @@ article{
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .player-image {
+        margin-right: 10px;
+        margin-left: 27px;
+    }
     .player-image img {
-        width: 100%;
-        height: 100%;
+        height: 300px;
     }
     article {
         grid-template-columns: repeat(2, 1fr);
