@@ -6,6 +6,30 @@ body{
 }
 
 
+/*-----------------
+ Animation
+ ----------------*/
+ 
+@keyframes sliding {
+            
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blueviolet;
+    }
+    
+}
+.game-info a>.watch-live-button {
+    animation: sliding 2s linear infinite alternate;
+    animation-play-state: running;
+}
+
+
 /*---------------
  Header Design
  ----------------*/
